@@ -3,7 +3,7 @@
 2. Open terminal in your home directory
 3. Write the following commands:
   - `chmod +x install_ros.sh`
-  - `-/install_ros.sh`
+  - `./install_ros.sh`
 4. Run the command to check the ROS version:
    `rosversion ros`
 
