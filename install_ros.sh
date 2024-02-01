@@ -50,7 +50,10 @@ sudo apt-get upgrade
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
-source ~/.bashrc
+echo "alias python=python3" >> ~/.bashrc
+
+sudo apt-get install ros-noetic-slam-gmapping
+sudo apt-get install ros-noetic-dwa-local-planner
 
 # Install TurtleBot3 simulation packages
 sudo apt install -y ros-noetic-turtlebot3-simulations
