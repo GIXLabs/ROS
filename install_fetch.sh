@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Clone the ros_kortex repository and install the necessary ROS dependencies
+# Clone the repository and install the necessary ROS dependencies
 cd catkin_ws/src
 git clone -b ros1 https://github.com/fetchrobotics/fetch_ros.git
 git clone -b gazebo11 https://github.com/fetchrobotics/fetch_gazebo.git
