@@ -9,3 +9,14 @@
   
 Note: Follow the same commands for installing Fetch and Kinova packages also, just use the file names "install_kortex.sh" for Kinova nd "install_fetch.sh" for Fetch packages. All, the packages are for ROS Noetic only.
    
+# Test Commands
+## Turtlebot
+
+## Kinova Arms
+`roslaunch kortex_gazebo spawn_kortex_robot.launch arm:=gen3_lite z0:=0.8`
+- Attempt to add MotionPlanning (bottom left) in RVIZ.
+- Arm should look like this in Gazebo:
+![Gazebo image](assets/kinova_test_gazebo.svg)
+- Adjusting the movement handles and selecting "Plan and Execute" in RVIZ should cause the arm to move in Gazebo.
+
+## Fetch
