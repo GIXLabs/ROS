@@ -12,7 +12,7 @@ conan profile update settings.compiler.libcxx=libstdc++11 default
 
 # Clone the ros_kortex repository and install the necessary ROS dependencies
 cd catkin_ws/src
-git clone -b noetic https://github.com/Kinovarobotics/ros_kortex.git
+git clone -b noetic-devel https://github.com/Kinovarobotics/ros_kortex.git
 cd ../
 rosdep install --from-paths src --ignore-src -y
 
