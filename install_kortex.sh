@@ -2,7 +2,7 @@
 
 # Dependencies
 sudo apt install python3 python3-pip
-sudo python3 -m pip install conan
+sudo python3 -m pip install conan==1.59
 pip install pyquaternion # Optional
 
 # Set Configurations
@@ -12,7 +12,7 @@ conan profile update settings.compiler.libcxx=libstdc++11 default
 
 # Clone the ros_kortex repository and install the necessary ROS dependencies
 cd catkin_ws/src
-git clone https://github.com/Kinovarobotics/ros_kortex.git
+git clone -b noetic https://github.com/Kinovarobotics/ros_kortex.git
 cd ../
 rosdep install --from-paths src --ignore-src -y
 
